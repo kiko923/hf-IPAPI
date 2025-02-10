@@ -4,7 +4,7 @@ export default {
 
     // 只在根路径 `https://你的域名/` 触发
     if (url.pathname === "/") {
-      return fetch("https://kiko923-ip.hf.space/", {
+      return fetch("https://kiko923-ip.hf.space/1.1.1.1", {
         method: "GET",
         headers: {
           "User-Agent": "Cloudflare-Worker",
