@@ -17,7 +17,7 @@ export default {
         }
       } catch (err) {
         return new Response(JSON.stringify({ error: "Invalid Form Data" }), {
-          status: 400,
+          status: 200,
           headers: { "Content-Type": "application/json" },
         });
       }
@@ -31,7 +31,7 @@ export default {
     // IP 格式校验（仅允许 IPv4 或 IPv6）
     if (!isValidIP(userIP)) {
       return new Response(JSON.stringify({ error: "Invalid IP format" }), {
-        status: 400,
+        status: 200,
         headers: { "Content-Type": "application/json" },
       });
     }
